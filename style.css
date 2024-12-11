@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-image: url('/CUIMS-CLONE/cubg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Courier New', Courier, monospace;
+}
+.intro{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    text-shadow:3px 2px 2px black,
+    0px -2px 58px black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.intro img{
+    height: 100px;
+    padding-top: 40px;
+    filter:
+    drop-shadow(0 -1px 8px #000000) /* spaces */
+    drop-shadow(0 -1px 0px #000000)
+    drop-shadow(0 24px 30px #000000);
+}
+section{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 30px;
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.584);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+}
+.form input{
+    width: 300px;
+    height: 35px;
+    text-align: left;
+    padding-left: 10px;
+    border: none;
+    border-radius: 9px;
+
+}
+.form select{
+    width: 300px;
+    height: 35px;
+    text-align: left;
+    padding-left: 10px;
+    border: none;
+    border-radius: 9px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.form p{
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+.form textarea{
+    width: 300px;
+    height: 35px;
+    padding-top: 1%;
+    text-align: left;
+    padding-left: 10px;
+    border: none;
+    border-radius: 9px;
+}
+button{
+    width: 300px;
+    height: 35px;
+    border: none;
+    border-radius: 9px;
+    background-color: blanchedalmond;
+    color: black;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: #00000082;
+    color: white;
+    cursor: pointer;
+}

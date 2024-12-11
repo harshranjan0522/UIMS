@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    height: 100px;
+    padding: 20px;
+    transition: 0.2s;
+}
+.logo img:hover{
+    height: 110px ;
+    padding: 15px;
+}
+
+.a:hover{
+    height: 110px ;
+    padding: 10px;
+}
+
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+.intro p{
+    margin: 10px;
+    text-align: center;
+}
+body{
+    background-image: url('/CUIMS-CLONE/headerbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.parent {
+    margin: 15px;
+    background-image: url('/CUIMS-CLONE/divbg.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    transition: 0.2s;
+    box-shadow: 0px 0px 90px rgba(181, 0, 0, 0.5); 
+}
+.parent:hover{
+    box-shadow: 10px 10px 50px rgb(0, 0, 0, 1.0); 
+    background: white;
+}
+.logo{
+    margin: 30px;
+}
+.heading{
+    text-align: center;
+    margin: 30px;
+}
+.heading h3{
+    font-weight:1000;
+    font-size:x-large;
+    text-decoration: underline;
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.text{
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    margin-left: 30px;
+    width: 300px;
+    height: auto;
+    margin: 30px;
+}
+button{
+    margin: 0px 10px;
+    background-color: red;
+    border-color: red;
+    color: white;
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    transition: 0.3s;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.6); 
+}
+button a{
+    text-decoration: none;
+    color: white;
+    transition: 0.1s;
+}
+button a:hover{
+    font-size: 14px;
+    color: white;
+    height: 35px;
+    width: 100px;
+}
+button:hover{
+    background-color: rgb(255, 0, 0, 0.5);
+    border-color: red;
+    color: white;
+    height: 40px;
+    width: 105px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.doubts, .issue{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: larger;
+    letter-spacing: 1.2px;
+    line-height: 3;
+    font-weight: bold;
+    background-color: rgb(248, 122, 122);
+    padding-bottom: 40px;
+}
+.issue p{
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.doubts p{
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.issue button{
+    width: 300px;
+    height: 40px;
+    transition:0.2s;
+}
+.doubts button{
+    width: 300px;
+    height: 40px;
+    transition:0.2s;
+}
+.issue button:hover{
+    background-color: white;
+    color: red;
+    width: 300px;
+    height: 40px;
+}
+.doubts button:hover{
+    background-color: white;
+    color: red;
+    width: 300px;
+    height: 40px;
+}
+.doubts a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: 0.2s;
+}
+.issue a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: 0.2s;
+}
+.doubts a:hover{
+    text-decoration: none;
+    background-color: white;
+    color: red;
+    font-size: 16px;
+}
+.issue a:hover{
+    text-decoration: none;
+    color: red;
+    font-size: 16px;
+}
+footer{
+    background-color: red;
+    color: white;
+    margin-top: 0px;
+    padding: 40px 20px;
+    text-align: center;
+    font-weight: lighter;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
