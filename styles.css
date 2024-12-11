@@ -39,14 +39,14 @@ header{
     text-align: center;
 }
 body{
-    background-image: url('/CUIMS-CLONE/headerbg.jpg');
+    background-image: url('headerbg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .parent {
     margin: 15px;
-    background-image: url('/CUIMS-CLONE/divbg.jpg'); 
+    background-image: url('divbg.jpg'); 
     background-size: cover; 
     background-repeat: no-repeat; 
     height: auto;
