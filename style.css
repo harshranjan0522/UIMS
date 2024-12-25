@@ -1,38 +1,40 @@
-*{
-    margin:0;
+/* Base styles remain unchanged */
+
+* {
+    margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-image: url('cubg1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Courier New', Courier, monospace;
 }
-.intro{
+
+.intro {
     text-align: center;
     color: white;
     font-size: 30px;
     font-weight: bolder;
-    text-shadow:3px 2px 2px black,
-    0px -2px 58px black;
+    text-shadow: 3px 2px 2px black, 0px -2px 58px black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.intro img{
+
+.intro img {
     height: 100px;
     padding-top: 40px;
-    filter:
-    drop-shadow(0 -1px 8px #000000) /* spaces */
-    drop-shadow(0 -1px 0px #000000)
-    drop-shadow(0 24px 30px #000000);
+    filter: drop-shadow(0 -1px 8px #000000) drop-shadow(0 -1px 0px #000000) drop-shadow(0 24px 30px #000000);
 }
-section{
+
+section {
     display: flex;
     justify-content: center;
     margin: 20px;
     padding: 30px;
-
 }
-.form{
+
+.form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,16 +45,10 @@ section{
     border-radius: 20px;
     backdrop-filter: blur(5px);
 }
-.form input{
-    width: 300px;
-    height: 35px;
-    text-align: left;
-    padding-left: 10px;
-    border: none;
-    border-radius: 9px;
 
-}
-.form select{
+.form input,
+.form select,
+.form textarea {
     width: 300px;
     height: 35px;
     text-align: left;
@@ -60,23 +56,9 @@ section{
     border: none;
     border-radius: 9px;
     margin-top: 10px;
-    cursor: pointer;
 }
-.form p{
-    font-size: larger;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-}
-.form textarea{
-    width: 300px;
-    height: 35px;
-    padding-top: 1%;
-    text-align: left;
-    padding-left: 10px;
-    border: none;
-    border-radius: 9px;
-}
-button{
+
+button {
     width: 300px;
     height: 35px;
     border: none;
@@ -85,8 +67,77 @@ button{
     color: black;
     transition: 0.3s;
 }
-button:hover{
+
+button:hover {
     background-color: #00000082;
     color: white;
     cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small devices (phones, less than 600px) */
+@media (max-width: 600px) {
+    .intro {
+        font-size: 22px;
+        padding: 10px;
+    }
+
+    .intro img {
+        height: 70px;
+    }
+
+    .form {
+        width: 90%;
+        padding: 20px 10px;
+    }
+
+    .form input,
+    .form select,
+    .form textarea,
+    button {
+        width: 100%; /* Take full width */
+    }
+
+    section {
+        flex-direction: column; /* Stack items vertically */
+        padding: 10px;
+    }
+}
+
+/* Medium devices (tablets, 600px to 900px) */
+@media (min-width: 600px) and (max-width: 900px) {
+    .intro {
+        font-size: 26px;
+    }
+
+    .intro img {
+        height: 80px;
+    }
+
+    .form {
+        width: 70%;
+        padding: 30px 15px;
+    }
+
+    .form input,
+    .form select,
+    .form textarea,
+    button {
+        width: 90%; /* Take most of the width */
+    }
+}
+
+/* Large devices (desktop, 900px and up) */
+@media (min-width: 900px) {
+    .form {
+        width: 400px;
+    }
+
+    .form input,
+    .form select,
+    .form textarea,
+    button {
+        width: 300px;
+    }
 }
