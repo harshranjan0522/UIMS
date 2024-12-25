@@ -1,198 +1,153 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.logo img{
-    height: 100px;
-    padding: 20px;
-    transition: 0.2s;
-}
-.logo img:hover{
-    height: 110px ;
-    padding: 15px;
-}
-
-.a:hover{
-    height: 110px ;
-    padding: 10px;
-}
-
-.intro{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-header{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    
-}
-.intro p{
-    margin: 10px;
-    text-align: center;
-}
-body{
+body {
     background-image: url('headerbg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
 }
 
-.parent {
-    margin: 15px;
-    background-image: url('divbg.jpg'); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    height: auto;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    padding: 10px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    transition: 0.2s;
-    box-shadow: 0px 0px 90px rgba(181, 0, 0, 0.5); 
-}
-.parent:hover{
-    box-shadow: 10px 10px 50px rgb(0, 0, 0, 1.0); 
-    background: white;
-}
-.logo{
-    margin: 30px;
-}
-.heading{
-    text-align: center;
-    margin: 30px;
-}
-.heading h3{
-    font-weight:1000;
-    font-size:x-large;
-    text-decoration: underline;
-    margin: 0px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-.text{
-    letter-spacing: 0.5px;
-    line-height: 25px;
-    margin-left: 30px;
-    width: 300px;
-    height: auto;
-    margin: 30px;
-}
-button{
-    margin: 0px 10px;
-    background-color: red;
-    border-color: red;
-    color: white;
-    height: 35px;
-    width: 100px;
-    border-radius: 20px;
-    transition: 0.3s;
-    box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.6); 
-}
-button a{
-    text-decoration: none;
-    color: white;
-    transition: 0.1s;
-}
-button a:hover{
-    font-size: 14px;
-    color: white;
-    height: 35px;
-    width: 100px;
-}
-button:hover{
-    background-color: rgb(255, 0, 0, 0.5);
-    border-color: red;
-    color: white;
-    height: 40px;
-    width: 105px;
-    border-radius: 20px;
-    font-size: 14px;
-}
-.doubts, .issue{
+header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+header .logo img {
+    max-width: 100%;
+    height: auto;
+    transition: 0.2s;
+}
+
+header .logo img:hover {
+    transform: scale(1.1);
+}
+
+.intro p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
-    font-size: larger;
-    letter-spacing: 1.2px;
-    line-height: 3;
-    font-weight: bold;
-    background-color: rgb(248, 122, 122);
-    padding-bottom: 40px;
+    gap: 20px;
 }
-.issue p{
-    color: black;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
 }
-.doubts p{
-    color: black;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.parent:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
 }
-.issue button{
-    width: 300px;
-    height: 40px;
-    transition:0.2s;
+
+.parent .logo img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
 }
-.doubts button{
-    width: 300px;
-    height: 40px;
-    transition:0.2s;
+
+.heading h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
-.issue button:hover{
-    background-color: white;
-    color: red;
-    width: 300px;
-    height: 40px;
+
+.text {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 10px;
 }
-.doubts button:hover{
-    background-color: white;
-    color: red;
-    width: 300px;
-    height: 40px;
-}
-.doubts a{
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-    transition: 0.2s;
-}
-.issue a{
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-    transition: 0.2s;
-}
-.doubts a:hover{
-    text-decoration: none;
-    background-color: white;
-    color: red;
-    font-size: 16px;
-}
-.issue a:hover{
-    text-decoration: none;
-    color: red;
-    font-size: 16px;
-}
-footer{
+
+button {
     background-color: red;
     color: white;
-    margin-top: 0px;
-    padding: 40px 20px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: darkred;
+    transform: scale(1.05);
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+.doubts, .issue {
     text-align: center;
-    font-weight: lighter;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(255, 122, 122, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.doubts button, .issue button {
+    width: 80%;
+    max-width: 300px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .logo img {
+        width: 80%;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .parent {
+        max-width: 90%;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
 }
